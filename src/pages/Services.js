@@ -63,7 +63,6 @@ const Services = () => {
           {servicesLists.map((service, i) => (
             <div
               key={i}
-              data-aos="fade-down-left"
               className={`overflow-hidden shadow-xl px-8 py-12 sm:px-12 lg:px-8 rounded-2xl ${usedColors[i]} `}
             >
               <div className="mb-12 space-y-4">

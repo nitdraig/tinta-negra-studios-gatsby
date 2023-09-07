@@ -67,7 +67,7 @@ const Projects = () => {
   return (
     <section className="py-6 bg-black sm:py-16 lg:py-16" id="proyectos">
       <div className="px-4 mt-10 mx-auto max-w-7xl sm:px-6 lg:px-8">
-        <div data-aos="zoom-in" className="max-w-2xl mx-auto text-center">
+        <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-3xl font-bold leading-tight text-gray-200 sm:text-4xl lg:text-5xl">
             Proyectos
           </h2>
@@ -82,7 +82,6 @@ const Projects = () => {
           <div className="grid max-w-xl grid-cols-1 mx-auto mt-8 text-center lg:max-w-full sm:mt-12 lg:mt-20 gap-x-6 xl:gap-x-12 gap-y-6 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
             {projectsLists.map((project, i) => (
               <div
-                data-aos="fade-down-right"
                 key={i}
                 className={`overflow-hidden rounded-2xl ${usedColors[i]}`}
               >

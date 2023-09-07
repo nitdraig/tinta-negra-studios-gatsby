@@ -6,6 +6,7 @@ module.exports = {
     title: `Tinta Negra Studios`,
     siteUrl: `https://www.yourdomain.tld`,
   },
+
   plugins: [
     "gatsby-plugin-postcss",
     "gatsby-plugin-image",
@@ -17,7 +18,7 @@ module.exports = {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "images",
-        path: "./src/images/",
+        path: `${__dirname}/src/images/`,
       },
       __key: "images",
     },

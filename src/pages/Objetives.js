@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+
 const objetivesLists = [
   {
     objetiveTitle: "Juntos",
@@ -50,7 +51,7 @@ const Objetives = () => {
   return (
     <section className="bg-gray-900 p-4" id="objetivos">
       <div className="container mt-10 mx-auto p-4 lg:p-12">
-        <div data-aos="zoom-in" className="max-w-2xl mx-auto text-center">
+        <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-3xl font-bold leading-tight pb-10 text-gray-200 sm:text-4xl lg:text-5xl">
             Nuestros objetivos
           </h2>
@@ -58,7 +59,6 @@ const Objetives = () => {
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
           {objetivesLists.map((objetives, i) => (
             <div
-              data-aos="fade-down-left"
               key={i}
               className={`overflow-hidden rounded-2xl ${usedColors[i]}   p-4 lg:p-12`}
             >

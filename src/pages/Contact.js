@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect } from "react";
 import Swal from "sweetalert2";
 
 const Contact = () => {
@@ -30,12 +30,10 @@ const Contact = () => {
       });
     }
   };
+
   return (
     <section className="py-16 bg-black" id="contacto">
-      <div
-        data-aos="flip-up"
-        className="container m-auto px-6 text-gray-800 md:px-12 xl:px-0"
-      >
+      <div className="container m-auto px-6 text-gray-800 md:px-12 xl:px-0">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-3xl font-bold leading-tight pb-10 text-gray-200 sm:text-4xl lg:text-5xl">
             Contacto

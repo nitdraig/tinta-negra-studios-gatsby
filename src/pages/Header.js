@@ -1,13 +1,12 @@
-import React from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import React, { useState, useEffect } from "react";
+
 const Header = () => {
   const headerStyle = {
     backgroundImage: `url("https://res.cloudinary.com/dcu06etml/image/upload/v1693868550/tns/bqcz8bxrmwhxtjuvotwb.jpg")`,
     backgroundSize: "cover",
     backgroundPosition: "center",
   };
-  AOS.init();
+
   return (
     <header
       style={headerStyle}
@@ -17,14 +16,12 @@ const Header = () => {
       <div className="h-screen bg-opacity-50 bg-black flex items-center justify-center">
         <div className="mx-2 text-center">
           <h1
-            data-aos="zoom-out-left"
             data-aos-duration="2000"
             className="text-white font-extrabold mt-[2em] text-4xl xs:text-5xl md:text-6xl"
           >
             Tinta Negra Studios
           </h1>
           <h2
-            data-aos="zoom-out-right"
             data-aos-duration="2000"
             className="text-gray-200 font-extrabold text-[2rem] xs:text-4xl  leading-tight"
           >
